@@ -1,32 +1,35 @@
-class VerifyWinner{ 
+class VerifyWinner
+{ 
     constructor(c,placar)
     {
         this.c = c;
         this.placar = placar;
     }
 
-    draw(){
+    draw()
+    {
         if (pontoJogador1 == 5 || pontoJogador2 == 5) // && -> E    || -> OU
             {
                 if (pontoJogador1 > pontoJogador2)
                     {
-                    setTimeout(() => {
+                    setTimeout(() =>
+                    {
                         textWinner="Parabéns, você venceu!"; 
-                        this.placar.resetScore();                      
+                        this.placar.resetScore();         
                     },1000);
                         
                     }
                 else
                     {
-                    setTimeout(() => {
+                    setTimeout(() => 
+                    {
                         textWinner="O CPU Venceu!";
                         this.placar.resetScore();
-                        },1000);                
+                    },1000);                
                     }
             }
             this.c.font = "70px arial";
-            this.c.fillStyle = "black"; 
-            this.c.fillText(textWinner, 100, this.c.canvas.height - 100,this.c.canvas.width);
-
+            this.c.fillStyle = "white"; 
+            this.c.fillText(textWinner, 150, this.c.canvas.height - 150,this.c.canvas.width);
     }  
 }

@@ -9,6 +9,13 @@ class Bola{
         this.altura = 20;
         this.x=(c.canvas.width/2)-(this.largura/2);
         this.y=(c.canvas.height/2)-(this.altura/2);
+        this.bolinha = new Image ();
+        this.bolinha.src = "assets/bolinha.png";
+        this.bolinha.width=20;
+        this.bolinha.height=20;
+        this.bolinha.addEventListener('load',()=>{
+           this.draw()
+        })
 
     }
     startGame()
@@ -70,8 +77,8 @@ class Bola{
 
     draw(){
         this.management();
-        this.c.fillStyle = "blue";
-        this.c.fillRect(this.x, this.y, this.largura, this.altura);
+        this.c.drawImage(this.bolinha, this.x, this.y, this.bolinha.width, this.bolinha.height);
+
     }
    
 }

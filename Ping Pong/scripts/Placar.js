@@ -25,7 +25,7 @@ class Placar{
 
     draw(){
         this.c.font = "70px arial";
-        this.c.fillStyle = "black";
+        this.c.fillStyle = "white";
         this.c.fillText(pontoJogador1, this.margem, this.margem + 70, this.largura);
         this.c.fillText(pontoJogador2, this.direita-this.margemDireita, this.margem + 70, this.largura);        
     }  

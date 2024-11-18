@@ -2,11 +2,18 @@ class Pad{
     constructor(c, keyboard){
         this.c = c;
         this.keyboard = keyboard;
-        this.vel=5;
-        this.largura = 20;
-        this.altura = 100;
+        this.vel=10;
+        this.largura = 70;
+        this.altura = 70;
         this.x=5;
         this.y=(c.canvas.height/2)-(this.altura/2);
+        this.raqueteL = new Image ();
+        this.raqueteL.src = "assets/raqueteL.png";
+        this.raqueteL.width=70;
+        this.raqueteL.height=70;
+        this.raqueteL.addEventListener('load',()=>{
+           this.draw()
+        })
 
     }
     management(){
@@ -20,8 +27,7 @@ class Pad{
     }
     draw(){
         this.management();
-        this.c.fillStyle = "green";
-        this.c.fillRect(this.x, this.y, this.largura, this.altura);
+        this.c.drawImage(this.raqueteL, this.x, this.y, this.raqueteL.width, this.raqueteL.height);
     }
    
 }

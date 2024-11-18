@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino Crisis X-Mode</title>
+    <title>Ping-Pong</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="scripts/Pad.js"></script>
     <script src="scripts/Bola.js"></script>
     <script src="scripts/Cpu.js"></script>
     <script src="scripts/Placar.js"></script>
     <script src="scripts/VerifyWinner.js"></script>
-    
 </head>
 <header>
-    <img src="assets/title.png" alt="dinocrisis" width="1200" height="120">
+    <img src="assets/titulo.png" alt="dinocrisis" width="500" height="149">
 </header>
 <body>
- 
-    <p>A verdadeira destruição começa agora!</p>
     <div class="gradedojogo">
     <canvas></canvas>
     </div>
@@ -31,10 +28,6 @@
         canvas.height = 500; 
         c = canvas.getContext('2d');
 
-
-       
-
-
         const keyboard={
             cima: false,
             baixo: false,
@@ -42,7 +35,6 @@
             direita: false,
             jump: false
         };
-
 
         let pontoJogador1 = 0;
         let pontoJogador2 = 0;

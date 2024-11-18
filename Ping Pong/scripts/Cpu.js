@@ -2,14 +2,21 @@ class Cpu{
     constructor(c, bola){
         this.c = c;
         this.bola = bola;
-        this.largura = 20;
-        this.altura = 100;
+        this.largura = 70;
+        this.altura = 70;
         this.x=(this.c.canvas.width - this.largura - 10);
         this.y=(this.c.canvas.height/2)-(this.altura/2);
-        this.vel=5;
+        this.vel=10;
         this.inicioX = this.x;
         this.inicioY = this.y;
         this.meioY = Math.random() * this.altura;
+        this.raqueteR = new Image ();
+        this.raqueteR.src = "assets/raqueteR.png";
+        this.raqueteR.width=70;
+        this.raqueteR.height=70;
+        this.raqueteR.addEventListener('load',()=>{
+           this.draw()
+        })
         
 
     }
@@ -44,8 +51,8 @@ class Cpu{
     }
     draw(){
         this.management();
-        this.c.fillStyle="black";
-        this.c.fillRect(this.x,this.y,this.largura, this.altura);
+        this.c.drawImage(this.raqueteR, this.x, this.y, this.raqueteR.width, this.raqueteR.height);
+
     }
    
 }

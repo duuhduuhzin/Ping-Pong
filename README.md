@@ -18,8 +18,7 @@ jogo há uma bola que, ao apertar o botão iniciar, entra em movimentação. O j
 O deploy do aplicativo foi realizado através do Vercel. Para acessá-lo basta clicar no <a href="https://vercel.com/bartholas-projects/ping-pong" target="_blank"> link </a>
 <br>
 
-<img src="![print](https://github.com/user-attachments/assets/dab0bf35-eb72-43df-a64f-0f336895004e)
-">
+<img src="https://i.postimg.cc/43jbMHTg/print.png">
 
 <br>
 

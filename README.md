@@ -15,7 +15,7 @@ jogo há uma bola que, ao apertar o botão iniciar, entra em movimentação. O j
 ## Deploy ##
 <br>
 <br>
-O deploy do aplicativofoi realizado através do Vercel. Para acessá-lo basta clicar no <a href="" target="_blank"> link </a>
+O deploy do aplicativofoi realizado através do Vercel. Para acessá-lo basta clicar no <a href="https://vercel.com/bartholas-projects/ping-pong" target="_blank"> link </a>
 <br>
 
 <img src="">
